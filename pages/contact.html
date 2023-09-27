@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana del rey</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+</head>
+<body>
+    <!-- inicio del encabezado -->
+    <header>
+        <div class="conteiner">
+            <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./music.html">Music</a></li>
+                    <li><a href="./shows.html">Shows</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>   
+    </header>
+    <!-- fin del encabezado -->
+    <main>
+    <!-- titulo -->
+    <div class="titulocontact">
+        <h1>Contact</h1>
+    </div>
+    <!-- seccion para formulario -->
+    <section>
+        <div class="conteinercontact">
+            <p>Para recibir informacion, complete el siguiente formulario:</p>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="4"></textarea> 
+
+                <input type="submit" class="botonformulario" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <!-- fin de seccion de formulario -->
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+        <div class="piedepagina">
+            <p>&copy;2023 Lana del rey. Todos los derechos reservados</p>
+        </div>  
+    </footer>
+    <!-- fin de pie de pagina -->
+</body>
+</html>
