@@ -205,7 +205,25 @@ li{
     width: 100px;
     height: 80px;
 }
-.conteinercontact{
+.botonformulario button{
+    background-color: black;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contenedorcontact {
+    background-color:black;
+    width: 50%;
+    margin-left: 200px;
+    border: solid 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 50px;
+    margin-bottom: 30px;
+
+}
+.contenedorcontact label{
+    color: aliceblue;
+}
+
+/* .conteinercontact{
     background-color: rgba(0,0,0, 0.5);
     padding: 20px;
     border: 1px solid;
@@ -235,8 +253,8 @@ li{
     background-color: black;
     color: aliceblue;
     border-radius: 10px;
-    margin: 20px;
-}
+    margin: 20px; */
+
 footer{
     display: block;
     text-align:center;
@@ -300,22 +318,7 @@ footer{
     .imagen p{
         font-size: 13px;
     }
-    .titulocontact h1{
-        font-size: 40px;
-        position: relative;left: 30px;
-    }
-    .conteinercontact p{
-        display: none;
-    }
-    .conteinercontact form{
-        width: 300px;
-        height: 250px;
-    }
-    .conteinercontact textarea{
-        width: 170px;
-        height: 50px;
-        margin-right: 50px;
-    }
+    
     
     
 } 
