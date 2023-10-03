@@ -249,6 +249,9 @@ footer{
 .piedepagina p {
     background-color:rgba(0,0,0, 0.8);
 }
+.accordion-button{
+    background-color: rgba(0,0,0, 0.5);
+}
 @media(max-width:768px){
      header{
         width: max-content;
@@ -297,6 +300,24 @@ footer{
     .imagen p{
         font-size: 13px;
     }
+    .titulocontact h1{
+        font-size: 40px;
+        position: relative;left: 30px;
+    }
+    .conteinercontact p{
+        display: none;
+    }
+    .conteinercontact form{
+        width: 300px;
+        height: 250px;
+    }
+    .conteinercontact textarea{
+        width: 170px;
+        height: 50px;
+        margin-right: 50px;
+    }
+    
+    
 } 
 
 
