@@ -4,12 +4,10 @@
 
 }
 body{
-    background-image: url(../img/fondo.jpg); background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%; 
-    
 }
 h1{
     font-size: 70px;
@@ -51,7 +49,7 @@ a {
     margin-bottom: 20px;
 }
 header a:hover {
-    color: black;
+    color:chocolate;
 }
 
 .titulo{
@@ -60,7 +58,7 @@ header a:hover {
 }
 
 h2{
-    color:dimgrey;
+    color:khaki;
     position: relative;left: 300px;   
 }
 h1{
@@ -103,6 +101,7 @@ li{
 .noticias p{
     margin-top: 10px;
     margin-bottom: 20px;
+    color: aliceblue;
 }
 .imagen{
     text-align: center;
@@ -143,6 +142,7 @@ li{
     margin: 15px;
 }
 .conteinershows{
+    color: aliceblue;
     background-color: rgba(0,0,0, 0.5);
     display: inline-block;
     border: double black;
@@ -183,6 +183,7 @@ li{
     text-align: center;
 }
 .divalbun p{
+    color: aliceblue;
     font-family: Croissant One, cursiva;
     font-size:20px;
 }
@@ -223,38 +224,6 @@ li{
     color: aliceblue;
 }
 
-/* .conteinercontact{
-    background-color: rgba(0,0,0, 0.5);
-    padding: 20px;
-    border: 1px solid;
-    border-radius: 5px;
-    width: 500px;
-    margin: auto;
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
-.conteinercontact p{
-    font-size: 20px;
-    font-family:unset;
-    margin-bottom: 10px;
-}
-.conteinercontact label{
-    display: block;
-    margin-bottom: 10px;
-}
-.conteinercontact input textarea{
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid;
-    border-radius: 3px;
-}
-.botonformulario{
-    background-color: black;
-    color: aliceblue;
-    border-radius: 10px;
-    margin: 20px; */
-
 footer{
     display: block;
     text-align:center;
@@ -288,10 +257,12 @@ footer{
 
     }
     .titulo h1{
+        color: aliceblue;
         font-size: 40px;
         position: relative; left: 30px;
     }
     .titulo h2{
+        color: aliceblue;
         position: relative;left: 30px;
     }
     .contenedorpadre{
@@ -305,6 +276,7 @@ footer{
     }
     .noticias p{
         font-size: 12px;
+        color: aliceblue;
     }
     .imagen{
         width: 380px;
@@ -318,9 +290,16 @@ footer{
     .imagen p{
         font-size: 13px;
     }
+    body {
+        background-image: url(../img/fondomobile.jpg);
+        background-size: cover;
+        background-attachment: scroll; 
+    }
+    a :hover{
+        color: chocolate;
+    }
     
-    
-    
+
 } 
 
 
