@@ -235,9 +235,6 @@ footer{
     background-color: rgba(0,0,0, 0.5);
 }
 @media(max-width:768px){
-     header{
-        width: max-content;
-     }
     .conteiner{
         display: block;
         flex-direction: column;
@@ -263,6 +260,7 @@ footer{
     .contenedorpadre{
         display: block;
         flex-direction: column;
+        overflow-x: hidden;
     }
     .noticias{
         width: 300px;
