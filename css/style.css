@@ -3,17 +3,14 @@
     margin: 0;
 
 }
+html{
+    font-size: 62,2%;
+}
 body{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-h1{
-    font-size: 70px;
-}
-h2{
-    font-size: 20px;
 }
 p{
     font-size: 15px;
@@ -37,6 +34,7 @@ ul{
     font-style:inherit;
     color:aliceblue;
     margin-right: 700px;
+    width: auto;
 } 
 a {
     font-size: 18px;
@@ -47,23 +45,23 @@ a {
 }
 .titulo{
     margin-bottom: 20px;
+    color: chocolate;
 }
 header a:hover {
     color:chocolate;
 }
-
 .titulo{
     align-items:flex-start;
     margin-right: 50px;
 }
-
 h2{
-    color:khaki;
-    position: relative;left: 300px;   
+    color:khaki; 
+    margin-left: 100px;
 }
 h1{
-    color: black;
-    position: relative;left: 200px;
+    color:chocolate;
+    font-size: 70px;
+    margin-left: 100px;
 }
 .navegacion{
     text-align: end;
@@ -72,14 +70,12 @@ li{
     list-style: none;
     margin: 20px;
 }
-
 .conteinernoticias{
     text-align: left;
 }
 .contenedorpadre{
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-around;
     
 }
@@ -145,12 +141,12 @@ li{
     color: aliceblue;
     background-color: rgba(0,0,0, 0.5);
     display: inline-block;
-    border: double black;
     padding: 10px;
-    margin-left: 30%;
+    margin-left: 30px;
+    border-radius: 50px;
     margin-bottom: 200px;
     margin-top: 80px;
-    height: 400px;
+    height: 500px;
       
 }
 .conteinershows h2{
@@ -162,7 +158,7 @@ li{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 3fr);
     gap:20px;
-    /* background-color:rgba(103, 57, 56, 0.5);     */
+    
 }
 .conteineralbunGrid img{
     width: 100%;
@@ -212,7 +208,6 @@ li{
     margin-bottom: 50px;
 }
 .contenedorcontact {
-    background-color:black;
     width: 50%;
     margin-left: 200px;
     border: solid 20px rgba(0, 0, 0, 0.5); 
@@ -290,17 +285,13 @@ footer{
     .imagen p{
         font-size: 13px;
     }
-    body {
-        background-image: url(../img/fondomobile.jpg);
-        background-size: cover;
-        background-attachment: scroll; 
-    }
+    
     a :hover{
         color: chocolate;
     }
     
+}
 
-} 
 
 
 
