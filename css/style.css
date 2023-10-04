@@ -251,11 +251,9 @@ footer{
     .titulo h1{
         color: aliceblue;
         font-size: 40px;
-        position: relative; left: 30px;
     }
     .titulo h2{
         color: aliceblue;
-        position: relative;left: 30px;
     }
     .contenedorpadre{
         display: block;
@@ -287,6 +285,7 @@ footer{
     a :hover{
         color: chocolate;
     }
+
     
 }
 
