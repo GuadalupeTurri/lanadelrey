@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62, 2%;
+}
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 100%;
+}
+
+.conteiner {
+  justify-content: space-between;
+}
+.conteiner .iconos {
+  margin: 10px;
+}
+.conteiner .iconos ion-icon {
+  position: relative;
+  top: 1px;
+  margin: 3px;
+  width: 20px;
+  height: 20px;
+  color: aliceblue;
+}
+.conteiner .iconos ion-icon:hover {
+  color: chocolate;
+}
+.conteiner ul {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
+  margin-right: 700px;
+  width: auto;
+}
+.conteiner ul li {
+  list-style: none;
+  margin: 20px;
+}
+.conteiner ul li a {
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.conteiner ul li a:hover {
+  color: chocolate;
+}
+
+h1 {
+  color: chocolate;
+  font-size: 70px;
+  margin-left: 100px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  height: 80px;
+  border: 5px;
+  width: 100%;
+}
+footer .piedepagina p {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.conteineralbunGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 3fr);
+  gap: 20px;
+}
+.conteineralbunGrid img {
+  width: 100%;
+  height: 80%;
+  border-radius: 150px;
+  border: solid 20px black;
+}
+
+.titulocarrucel {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.titulocarrucel h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-left: 40%;
+  color: chocolate;
+}
+
+.carousel-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 10px;
+}
+.carousel-inner img {
+  margin-left: 30%;
+}
+
+.contenedorpadre, header, .conteiner, .conteiner .iconos {
+  display: flex;
+  flex-direction: row;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+.titulo h2 {
+  color: khaki;
+  margin-left: 100px;
+}
+
+.contenedorpadre {
+  justify-content: space-around;
+}
+.contenedorpadre .conteinernoticias {
+  text-align: left;
+}
+.contenedorpadre .conteinernoticias .noticias {
+  text-align: center;
+  border: double 10px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  border-radius: 50px;
+  color: aliceblue;
+}
+.contenedorpadre .conteinernoticias .noticias p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+}
+.contenedorpadre .conteinernoticias .noticias button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+.contenedorpadre .conteinernoticias .noticias .infoboton {
+  background-color: dimgrey;
+  border-radius: 20px;
+}
+.contenedorpadre .imagen {
+  text-align: center;
+  color: aliceblue;
+  width: 500px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  border: double chocolate 10px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+.contenedorpadre .imagen img {
+  border-radius: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+.logomusic img {
+  width: 100px;
+  height: 80px;
+}
+
+#divcanciones {
+  width: 500px;
+  position: relative;
+  left: 300px;
+}
+#divcanciones iframe {
+  border-radius: 30px;
+  width: 100%;
+  height: 352px;
+}
+
+.conteinershows {
+  display: inline-block;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 50px;
+  margin-bottom: 200px;
+  margin-top: 80px;
+  height: 500px;
+}
+.conteinershows h2 {
+  color: gray;
+  position: relative;
+  left: 1px;
+  font-family: "EB Garamond", serif;
+}
+.conteinershows h3 {
+  font-family: "EB Garamond", serif;
+  position: relative;
+  left: 5px;
+  margin: 15px;
+  color: chocolate;
+}
+
+.contenedorcontact {
+  width: 50%;
+  margin-left: 200px;
+  border: solid 20px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.contenedorcontact span {
+  background-color: chocolate;
+}
+.contenedorcontact input {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contenedorcontact label {
+  color: aliceblue;
+}
+.contenedorcontact textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contenedorcontact .botonformulario button {
+  background-color: chocolate;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

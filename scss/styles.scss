@@ -1,0 +1,142 @@
+@import "base";
+@import "variables";
+@import "general";
+@import "gallery";
+//extend
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+//scss pagina index
+.titulo{
+    margin-bottom: 20px;
+    align-items:flex-start;
+    margin-right: 50px;
+    h2{
+        color:khaki; 
+        margin-left: 100px;
+    }
+}
+.contenedorpadre{
+    @extend%flexrow;
+    justify-content: space-around;
+    .conteinernoticias{
+        text-align: left;
+        .noticias{
+            text-align:center;
+            border:double 10px;
+            width: 400px;
+            height: 200px;
+            background-color: $colorFondo;
+            margin: 15px;
+            border-radius: 50px;
+            color: aliceblue;
+            p{
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: aliceblue;
+                font-weight: bold;
+                font-family: 'Source Code Pro', monospace;
+                font-size: 12px;
+            }
+            button{
+                background-color:$colorFondo;
+                color:aliceblue;
+                margin-bottom: 10px;
+
+            }
+            .infoboton{
+                background-color:dimgrey;
+                border-radius: 20px;
+            }
+    }
+}
+    .imagen{
+        text-align: center;
+        color: aliceblue;
+        width: 500px;
+        display: block;
+        background-color: $colorFondo;
+        font-family: 'Source Code Pro', monospace;
+        font-weight:bold;
+        border: double $colorTexto  10px;
+        margin-bottom: 30px;
+        border-radius: 50px;
+        img{
+            border-radius: 30px;
+            width: $anchosmax;
+            height: 500px;
+        }
+    
+}
+}
+//scss music
+.logomusic{
+    img{
+        width: 100px;
+        height: 80px;
+        
+    }
+}
+#divcanciones{
+    width: 500px;
+    position: relative;left: 300px;
+    iframe{
+        border-radius: 30px;
+        width: $anchosmax;
+        height: 352px;
+    }
+}
+//scss shows
+.conteinershows{
+    display: inline-block;
+    color: aliceblue;
+    background-color: $colorFondo;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 50px;
+    margin-bottom: 200px;
+    margin-top: 80px;
+    height: 500px;
+    h2{
+        color: gray;
+        position: relative;left: 1px;
+        font-family: 'EB Garamond', serif;
+       
+    }
+    h3{
+        font-family: 'EB Garamond', serif;
+        position: relative;left: 5px;
+        margin: 15px; 
+        color: $colorTexto;
+    }
+}
+//scss contacto
+.contenedorcontact{
+    width: $anchosmax/2;
+    margin-left: 200px;
+    border: solid 20px $colorFondo;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    span{
+        background-color: $colorTexto;
+    }
+    input{
+        background-color: $colorFondo;
+    }
+    label{
+        color: aliceblue;
+    }
+    textarea{
+        background-color: $colorFondo;
+    }
+    .botonformulario{
+        button{
+            background-color: $colorTexto;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+       
+    }
+}
