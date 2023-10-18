@@ -23,32 +23,28 @@
     margin: 5%;
     .conteinernoticias{
         text-align: left;
-        .imagen2{
-            display: block;
-            border-radius: 50px;
-            overflow-x: hidden;
-            padding: 5px;
-            .dealer{
-                width: $anchosmax;
-                height: 152px;
-                border-radius: 50px;
-                border: 0;
-            
-            }
-            p{
-                color: aliceblue;
-                font-weight: bold;
-                font-size: 20px;
-                text-align: center;
-                font-family:'Source Code Pro', monospace; 
-
-            }
-            img{
-                width: $anchosmax;
-                height: 30vw;
-                border-radius: 10px;
-            }
-        }
+        .contenedorgif{
+            @extend %flexrow;
+             .gifcontent{
+                display: block;
+                background-color: $colorFondo;
+                border-radius: 10%;
+                overflow-x: hidden;
+                width: 50%;
+                margin: 5px;
+                    h3{
+                        color: $colorTexto;
+                    }
+                    p{
+                        color: aliceblue;
+                        text-align: center;
+                     }
+                    img{
+                    width: $anchosmax;
+                     }
+                    }
+           
+                }
         .noticias{
             text-align:center;
             border:double 10px;
@@ -111,16 +107,29 @@
         
     }
 }
+.Titulomusic{
+    position: relative;
+    width: $anchosmax;
+    h1{
+        position: absolute;
+        top: 10%;
+    }
+    img{
+        width: $anchosmax;
+        height: 40vw;
+    }
+}
 #divcanciones{
-    width: 40%;
-    position: relative; left: 20%;
-    height: 100%;
+    display: flex;
+    width: $anchosmax;
+    height: auto;
     margin-bottom: 10%;
     margin: 10px;
     iframe{
         border-radius: 30px;
         width: $anchosmax;
         height: 352px;
+        margin: 10px;
     }
 }
 //scss shows
@@ -217,8 +226,8 @@
             color: aliceblue;
         }
         .imagen{
-            width: 70%;
-            margin-left: 20px;
+            width: $anchosmax;
+            position: relative;right:40%;
             overflow-x: hidden;
         }
         .imagen img{
@@ -240,15 +249,17 @@
             width: $anchosmax;
     
         }
+        //media queries music
         .Titulomusic{
             h1{
                 font-size: 30px;
             }
         }
         #divcanciones{
-            width: 70%;
+            display: block;
+            width: 80vw;
             iframe{
-                width: $anchosmax;
+               width: $anchosmax;
             }
             
         }

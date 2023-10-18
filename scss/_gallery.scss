@@ -33,10 +33,17 @@
     .conteineralbunGrid{
         display: block;
         flex-direction: column;
-        .carousel-inner {
-            width: $anchosmax;
-            margin-right: 20%;   //preguntar como ajustar img
-
     }
+    .carousel-inner {
+        width: $anchosmax;
+        img{
+            margin-left: 0;
+            width: $anchosmax;
+        }
+        }
 }
-}
+    
+    
+
+    
+        

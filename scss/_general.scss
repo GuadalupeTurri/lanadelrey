@@ -1,6 +1,3 @@
-// html{
-//     font-size: 62,2%;
-// }
 body{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
@@ -10,12 +7,11 @@ body{
 header{
     @extend%flexrow;
     background-color: $colorFondo;
-    padding: 10px;
     width: $anchosmax;
     }
     .conteiner{
         @extend%flexrow;
-        justify-content: space-between;
+        justify-content: space-around;
         .iconos{
             @extend%flexrow;
             margin: 10px;
@@ -31,10 +27,10 @@ header{
             }
         }
         ul{
-            display: flex;
+            @extend %flexrow;
+            margin-right: 50vw;
             font-family:'Courier New', Courier, monospace;
             color:aliceblue;
-            margin-right: 700px;
             width: auto;
             li{
                 list-style: none;
