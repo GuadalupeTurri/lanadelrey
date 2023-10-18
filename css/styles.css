@@ -361,6 +361,9 @@ footer .piedepagina p {
   .contenedorcontact {
     width: 80%;
   }
+  .tituloshows h1 {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
