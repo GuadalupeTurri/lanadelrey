@@ -20,17 +20,44 @@
 .contenedorpadre{
     @extend%flexrow;
     justify-content: space-around;
+    margin: 5%;
     .conteinernoticias{
         text-align: left;
+        .imagen2{
+            display: block;
+            border-radius: 50px;
+            overflow-x: hidden;
+            padding: 5px;
+            .dealer{
+                width: $anchosmax;
+                height: 152px;
+                border-radius: 50px;
+                border: 0;
+            
+            }
+            p{
+                color: aliceblue;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                font-family:'Source Code Pro', monospace; 
+
+            }
+            img{
+                width: $anchosmax;
+                height: 30vw;
+                border-radius: 10px;
+            }
+        }
         .noticias{
             text-align:center;
             border:double 10px;
-            width: 400px;
-            height: 200px;
+            width:50vw;
             background-color: $colorFondo;
             margin: 15px;
             border-radius: 50px;
-            color: aliceblue;
+            color: $colorTexto;
+
             p{
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -38,11 +65,13 @@
                 font-weight: bold;
                 font-family: 'Source Code Pro', monospace;
                 font-size: 12px;
+                padding: 5px;
             }
             button{
                 background-color:$colorFondo;
                 color:aliceblue;
                 margin-bottom: 10px;
+                padding: 5px;
 
             }
             .infoboton{
@@ -51,21 +80,25 @@
             }
     }
 }
-    .imagen{
-        text-align: center;
-        color: aliceblue;
-        width: 500px;
-        display: block;
-        background-color: $colorFondo;
-        font-family: 'Source Code Pro', monospace;
-        font-weight:bold;
-        border: double $colorTexto  10px;
-        margin-bottom: 30px;
-        border-radius: 50px;
+.imagen{
+    text-align: center;
+    color: aliceblue;
+    display: block;
+    background-color: rgba(0,0,0, 0.5);
+    font-size: 100px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:bold;
+    border: double black 10px;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    padding: 5px;
+        p{
+            font-size: 15px;
+        }
         img{
+            width: 100%;
             border-radius: 30px;
-            width: $anchosmax;
-            height: 500px;
         }
     
 }
@@ -79,8 +112,11 @@
     }
 }
 #divcanciones{
-    width: 500px;
-    position: relative;left: 300px;
+    width: 40%;
+    position: relative; left: 20%;
+    height: 100%;
+    margin-bottom: 10%;
+    margin: 10px;
     iframe{
         border-radius: 30px;
         width: $anchosmax;
@@ -114,7 +150,7 @@
 //scss contacto
 .contenedorcontact{
     width: $anchosmax/2;
-    margin-left: 200px;
+    margin-left: 20%;
     border: solid 20px $colorFondo;
     border-radius: 50px;
     margin-bottom: 30px;
@@ -134,9 +170,97 @@
     .botonformulario{
         button{
             background-color: $colorTexto;
-            width: 100%;
+            width: $anchosmax;
             margin-bottom: 50px;
         }
        
     }
 }
+//media queries de los html
+    @media(max-width:768px){
+        //menu
+        .conteiner{
+            display: block;
+            flex-direction: column;
+            width: $anchosmax;
+        }
+        .menu ul{
+            display: block;
+            flex-direction: column;
+        }
+        //index
+        .titulo {
+            display: inline-block;
+            
+    
+        }
+        .titulo h1{
+            color:$colorTexto;
+            font-size: 30px;
+        }
+        .titulo h2{
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .contenedorpadre{
+            display: block;
+            flex-direction: column;
+            overflow-x: hidden;
+            padding: 35px;
+        }
+        .noticias{
+            width: 50%;
+    
+        }
+        .noticias p{
+            font-size: 9px;
+            color: aliceblue;
+        }
+        .imagen{
+            width: 70%;
+            margin-left: 20px;
+            overflow-x: hidden;
+        }
+        .imagen img{
+            width: 50%;
+            height: 50%;
+        }
+        .imagen p{
+            font-size: 13px;
+        }
+        .imagen2{
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        
+        a :hover{
+            color: chocolate;
+        }
+        footer{
+            width: $anchosmax;
+    
+        }
+        .Titulomusic{
+            h1{
+                font-size: 30px;
+            }
+        }
+        #divcanciones{
+            width: 70%;
+            iframe{
+                width: $anchosmax;
+            }
+            
+        }
+        //media queries de contact
+        .titulocontact{
+            h1{
+                font-size: 40px;
+            }
+        }
+        .contenedorcontact{
+            width: 80%;
+        }
+    }
+    
+    

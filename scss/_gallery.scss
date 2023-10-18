@@ -27,3 +27,16 @@
         margin-left: 30%;
     }
 }
+
+//media queries de la gallery
+@media (max-width:768px) {
+    .conteineralbunGrid{
+        display: block;
+        flex-direction: column;
+        .carousel-inner {
+            width: $anchosmax;
+            margin-right: 20%;   //preguntar como ajustar img
+
+    }
+}
+}
