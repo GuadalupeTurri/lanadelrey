@@ -37,6 +37,7 @@ header {
   font-family: "Courier New", Courier, monospace;
   color: aliceblue;
   width: auto;
+  padding-left: 0;
 }
 .conteiner ul li {
   list-style: none;
@@ -357,6 +358,9 @@ footer .piedepagina p {
   }
   .titulocontact h1 {
     font-size: 40px;
+  }
+  ul {
+    padding-left: 0;
   }
   .contenedorcontact {
     width: 80%;
