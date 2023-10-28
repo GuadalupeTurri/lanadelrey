@@ -326,6 +326,9 @@
             width: $anchosmax;
             .evento{
                 margin-left: 20%;
+                img{
+                    width: $anchosmax;
+                }
             }
         }
         .discos{

@@ -405,6 +405,9 @@ footer .piedepagina p {
   .conteinerfechas .evento {
     margin-left: 20%;
   }
+  .conteinerfechas .evento img {
+    width: 100%;
+  }
   .discos {
     display: block;
   }
