@@ -56,7 +56,7 @@
 
             p{
                 margin-top: 10px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 color: aliceblue;
                 font-weight: bold;
                 font-family: 'Source Code Pro', monospace;
@@ -100,13 +100,15 @@
 }
 }
 //scss music
-.logomusic{
-    img{
+
+ .logomusic{
+     img{
         width: 100px;
         height: 80px;
-        
-    }
-}
+                
+            }
+        }
+
 .Titulomusic{
     position: relative;
     width: $anchosmax;
@@ -122,7 +124,6 @@
 #divcanciones{
     display: flex;
     justify-content: center;
-    width: $anchosmax;
     height: auto;
     padding: 5px;
     iframe{
@@ -134,27 +135,57 @@
     }
 }
 //scss shows
-.conteinershows{
-    display: inline-block;
-    color: aliceblue;
-    background-color: $colorFondo;
-    padding: 10px;
-    margin-left: 30px;
-    border-radius: 50px;
-    margin-bottom: 200px;
-    margin-top: 80px;
-    height: 500px;
-    h2{
-        color: gray;
-        position: relative;left: 1px;
-        font-family: 'EB Garamond', serif;
-       
+.tituloshows{
+    margin-left: 20%;
+        h1{
+            font-size: 50px;
+            font-family: 'Kay Pho Du', serif;
+        }
+}
+
+.conteinerfechas{
+    @extend%flexrow;
+    justify-content: center;
+    background-color: black;
+    .evento{
+        background-color: $colorFondo;
+        margin: 10px;
+        img{
+            height: 320px;
+            width: auto;
+        }
+        p{
+            color: aliceblue;
+        }
+        h4{
+            font-family: 'Kay Pho Du', serif;
+            font-size: 15px;
+            color: $colorTexto;
+        }
     }
-    h3{
-        font-family: 'EB Garamond', serif;
-        position: relative;left: 5px;
-        margin: 15px; 
+}
+.discos{
+    @extend%flexrow;
+    justify-content: center;
+    background-color: $colorFondo;
+    padding: 30px;
+    p{
+        text-align: center;
+        font-size: 20px;
         color: $colorTexto;
+        font-family: 'Kay Pho Du', serif;
+        margin: 10px;
+    }
+    .pya{
+        margin: 50px;
+        button{
+            background-color:crimson;
+            color: aliceblue;
+            border-radius: 20px;
+            padding: 5px;
+            margin-left: 40%;
+            margin-top: 10%;
+        }
     }
 }
 //scss contacto
@@ -173,6 +204,7 @@
     }
     label{
         color: aliceblue;
+        
     }
     textarea{
         background-color: $colorFondo;
@@ -200,9 +232,9 @@
         }
         //index
         .titulo {
-            display: inline-block;
-            
-    
+            display: flex;
+            flex-wrap: wrap;
+
         }
         .titulo h1{
             color:$colorTexto;
@@ -215,6 +247,7 @@
         .contenedorpadre{
             display: block;
             flex-direction: column;
+            justify-content: center;
             overflow-x: hidden;
             padding: 35px;
         }
@@ -259,6 +292,7 @@
         #divcanciones{
             display: block;
             width: 80vw;
+            margin: 20px;
             iframe{
                width: $anchosmax;
             
@@ -275,14 +309,40 @@
             padding-left: 0;
         }
         .contenedorcontact{
+            margin: 20px;
             width: 80%;
+
         }
         //media queries shows
         .tituloshows{
             h1{
-                font-size: 40px;
+                margin-left: 0;
+                font-size: 20px;
             }
         }
+        .conteinerfechas{
+            display: block;
+            flex-direction: column;
+            width: $anchosmax;
+            .evento{
+                margin-left: 20%;
+            }
+        }
+        .discos{
+            display: block;
+            p{
+                font-size: 16px;
+            }
+            img{
+                width: $anchosmax;
+            }
+            .pya{
+                button{
+                    margin-left: 0;
+                }
+            }
+        }
+
         
     }
     

@@ -8,10 +8,13 @@ header{
     @extend%flexrow;
     background-color: $colorFondo;
     width: $anchosmax;
+  
 }
     .conteiner{
         @extend%flexrow;
         justify-content: space-around;
+        
+        
         .iconos{
             @extend%flexrow;
             margin: 10px;
@@ -65,9 +68,7 @@ footer{
     text-align:center;
     background-color:$colorFondo;
     color: aliceblue;
-    height: 50%;
-    border:  5px;
-    width: 100%;
+    width: $anchosmax;
     .piedepagina{
         p{
             background-color: $colorFondo;
