@@ -303,17 +303,14 @@
         .conteinermusic{
             display: block;
             justify-content: center;
-            width: $anchosmax;
             img{
-                padding: 10px;
                 width: $anchosmax;
                 height: auto;     //falta completar
-                overflow-x: hidden;
             }
             .tituloyp{
                 display: block;
                 justify-content: center;
-                margin-right: 20%;
+                width: $anchosmax;
                 h1{
 
                     font-size: 20px;
@@ -321,6 +318,14 @@
                 p{
                     font-size: 10px;
                 }
+            }
+        }
+        .musica{
+                padding: 10px;
+                margin: 10px;
+            iframe{
+                width: $anchosmax;
+                overflow-x: hidden;
             }
         }
         //media queries de contact
@@ -341,19 +346,19 @@
         .tituloshows{
             h1{
                 margin-left: 0;
-                font-size: 20px;
+                font-size: 15px;
             }
         }
         .conteinerfechas{
             display: block;
             flex-direction: column;
-            width: $anchosmax;
             .evento{
+                width: $anchosmax; 
                 img{
-                    width:$anchosmax;
+                    width:auto;
                 }
-            }
         }
+    }
         .discos{
             display: block;
             p{
@@ -364,7 +369,7 @@
             }
             .pya{
                 button{
-                    margin-left: 0;
+                    margin:20px;
                 }
             }
         }
