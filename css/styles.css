@@ -108,6 +108,12 @@ footer .piedepagina p {
     display: block;
     flex-direction: column;
   }
+  .titulocarrucel {
+    margin-right: 20%;
+  }
+  .titulocarrucel h2 {
+    font-size: 25px;
+  }
   .carousel-inner {
     width: 100%;
   }
@@ -116,7 +122,7 @@ footer .piedepagina p {
     width: 100%;
   }
 }
-.discos, .conteinerfechas, .contenedorpadre .conteinernoticias .contenedorgif, .contenedorpadre, header, .conteiner, .conteiner .iconos, .conteiner ul {
+.discos, .conteinerfechas, .conteinermusic, .contenedorpadre .conteinernoticias .contenedorgif, .contenedorpadre, header, .conteiner, .conteiner .iconos, .conteiner ul {
   display: flex;
   flex-direction: row;
 }
@@ -210,29 +216,37 @@ footer .piedepagina p {
   height: 80px;
 }
 
-.Titulomusic {
-  position: relative;
-  width: 100%;
+.conteinermusic {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
 }
-.Titulomusic h1 {
-  position: absolute;
-  top: 10%;
+.conteinermusic .tituloyp {
+  display: block;
 }
-.Titulomusic img {
-  width: 100%;
-  height: 40vw;
+.conteinermusic .tituloyp h1 {
+  margin-left: 40%;
+}
+.conteinermusic .tituloyp p {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin: 30px;
 }
 
-#divcanciones {
-  display: flex;
-  justify-content: center;
-  height: auto;
-  padding: 5px;
-}
-#divcanciones iframe {
-  border-radius: 30px;
+.musica {
+  display: inline;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 352px;
+}
+.musica iframe {
+  height: 30vw;
+  width: 100%;
+  border: 0;
+}
+.musica iframe iframe {
+  background-color: #2C065C;
 }
 
 .tituloshows {
@@ -302,11 +316,21 @@ footer .piedepagina p {
 .contenedorcontact input {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.contenedorcontact input:focus {
+  border: #2C065C;
+  background-color: #F80461;
+  color: aliceblue;
+}
 .contenedorcontact label {
   color: aliceblue;
 }
 .contenedorcontact textarea {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.contenedorcontact textarea:focus {
+  border: #2C065C;
+  background-color: #F80461;
+  color: aliceblue;
 }
 .contenedorcontact .botonformulario button {
   background-color: #AD38FD;
@@ -368,21 +392,32 @@ footer .piedepagina p {
     flex-wrap: wrap;
   }
   a :hover {
-    color: chocolate;
+    color: #AD38FD;
   }
   footer {
     width: 100%;
   }
-  .Titulomusic h1 {
-    font-size: 30px;
-  }
-  #divcanciones {
+  .conteinermusic {
     display: block;
-    width: 80vw;
-    margin: 20px;
-  }
-  #divcanciones iframe {
+    justify-content: center;
     width: 100%;
+  }
+  .conteinermusic img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .conteinermusic .tituloyp {
+    display: block;
+    justify-content: center;
+    margin-right: 20%;
+  }
+  .conteinermusic .tituloyp h1 {
+    font-size: 20px;
+  }
+  .conteinermusic .tituloyp p {
+    font-size: 10px;
   }
   .titulocontact h1 {
     font-size: 40px;

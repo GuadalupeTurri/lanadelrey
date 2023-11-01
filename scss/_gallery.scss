@@ -9,7 +9,7 @@
         height: 80%;
         border-radius: 150px;
         border: solid 20px black;
-    }
+}
 }
 .titulocarrucel{
     background-color: $colorFondo;
@@ -33,6 +33,12 @@
     .conteineralbunGrid{
         display: block;
         flex-direction: column;
+    }
+    .titulocarrucel{
+        margin-right: 20%;
+        h2{
+            font-size: 25px;
+        }
     }
     .carousel-inner {
         width: $anchosmax;

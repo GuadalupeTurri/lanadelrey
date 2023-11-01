@@ -107,32 +107,39 @@
                 
             }
         }
-
-.Titulomusic{
-    position: relative;
+.conteinermusic{
+    @extend%flexrow;
+    background-color:$colorFondo;
+    padding: 50px;
+    .tituloyp{
+        display: block;
+        h1{
+            margin-left: 40%;
+        }
+        p{
+            text-align: center;
+            color: aliceblue;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 20px;
+            margin:30px;
+        }
+    }
+} 
+.musica{
+    display: inline;
+    justify-content: space-around;
+    background-color: $colorFondo;
     width: $anchosmax;
-    h1{
-        position: absolute;
-        top: 10%;
-    }
-    img{
+     iframe{
+        height: 30vw;
         width: $anchosmax;
-        height: 40vw;
-    }
-}
-#divcanciones{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    padding: 5px;
-    iframe{
-        border-radius: 30px;
-        width: $anchosmax;
-        height: 352px;
-        
+        border: 0;
+        iframe{
+            background-color: #2C065C;
+        }
+     }
+} 
 
-    }
-}
 //scss shows
 .tituloshows{
     margin-left: 20%;
@@ -178,7 +185,7 @@
     .pya{
         margin: 50px;
         button{
-            background-color:#F80461;
+            background-color:$colorextra;
             color: aliceblue;
             border-radius: 20px;
             padding: 5px;
@@ -199,7 +206,12 @@
         background-color: $colorTexto;
     }
     input{
-        background-color: $colorFondo;
+        background-color: $colorFondo
+    }
+    input:focus{
+        border: #2C065C;
+        background-color: $colorextra;
+        color: aliceblue;
     }
     label{
         color: aliceblue;
@@ -207,6 +219,11 @@
     }
     textarea{
         background-color: $colorFondo;
+    }
+    textarea:focus{
+        border: #2C065C;
+        background-color: $colorextra;
+        color: aliceblue;
     }
     .botonformulario{
         button{
@@ -276,27 +293,35 @@
         }
         
         a :hover{
-            color: chocolate;
+            color: $colorTexto;
         }
         footer{
             width: $anchosmax;
     
         }
         //media queries music
-        .Titulomusic{
-            h1{
-                font-size: 30px;
-            }
-        }
-        #divcanciones{
+        .conteinermusic{
             display: block;
-            width: 80vw;
-            margin: 20px;
-            iframe{
-               width: $anchosmax;
-            
+            justify-content: center;
+            width: $anchosmax;
+            img{
+                padding: 10px;
+                width: $anchosmax;
+                height: auto;     //falta completar
+                overflow-x: hidden;
             }
-            
+            .tituloyp{
+                display: block;
+                justify-content: center;
+                margin-right: 20%;
+                h1{
+
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
         }
         //media queries de contact
         .titulocontact{
