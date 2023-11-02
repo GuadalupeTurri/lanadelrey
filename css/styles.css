@@ -434,6 +434,9 @@ footer .piedepagina p {
     margin: 20px;
     width: 80%;
   }
+  .tituloshows {
+    align-items: center;
+  }
   .tituloshows h1 {
     margin-left: 0;
     font-size: 15px;
@@ -441,9 +444,7 @@ footer .piedepagina p {
   .conteinerfechas {
     display: block;
     flex-direction: column;
-  }
-  .conteinerfechas .evento {
-    width: 100%;
+    align-items: center;
   }
   .conteinerfechas .evento img {
     width: auto;
