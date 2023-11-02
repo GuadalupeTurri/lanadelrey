@@ -142,7 +142,7 @@
 
 //scss shows
 .tituloshows{
-    margin-left: 20%;
+    margin-left: 20vw;
         h1{
             font-size: 50px;
             font-family: 'Kay Pho Du', serif;
@@ -178,7 +178,7 @@
     p{
         text-align: center;
         font-size: 20px;
-        color: $colorTexto;
+        color: aliceblue;
         font-family: 'Kay Pho Du', serif;
         margin: 10px;
     }
@@ -355,6 +355,12 @@
             flex-direction: column;
             align-items: center;
             .evento{
+                h4{
+                    width: 50%;
+                }
+                p{
+                    width: 50%;
+                }
                 img{
                     width: auto;
                 }
@@ -362,15 +368,17 @@
     }
         .discos{
             display: block;
+            width: $anchosmax;
             p{
-                font-size: 16px;
+                font-size: 15px;
+                margin: 0;
             }
             img{
                 width: $anchosmax;
             }
             .pya{
                 button{
-                    margin:20px;
+                    margin-left: 0;
                 }
             }
         }
